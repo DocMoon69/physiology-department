@@ -4,18 +4,18 @@
       "id": "krishna-chandra-sarkar",
       "name": "Dr. Krishna Chandra Sarkar",
       "role": "HEAD OF DEPARTMENT",
-      "designation": "PROFESSOR",
-      "qualification": "MBBS,MD",
-      "about": "",
-      "research": "",
-      "email": "",
-      "photo": ""
+      "initials": "KCS"
     },
     {
       "id": "debjani-laha",
       "name": "Dr. Debjani Laha",
       "role": "FACULTY",
-      "initials": "DL"
+      "designation": "ASSOCIATE PROFESSOR",
+      "qualification": "MBBS,MD",
+      "about": "",
+      "research": "",
+      "email": "",
+      "photo": ""
     },
     {
       "id": "prativa-lahiri",
