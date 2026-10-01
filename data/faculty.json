@@ -16,18 +16,18 @@
       "id": "prativa-lahiri",
       "name": "Dr. Prativa Lahiri",
       "role": "FACULTY",
+      "initials": "PL"
+    },
+    {
+      "id": "tamal-chakraborty",
+      "name": "Dr. Tamal Chakraborty",
+      "role": "FACULTY",
       "designation": "ASSOCIATE PROFESSOR",
       "qualification": "MBBS,MD",
       "about": "",
       "research": "",
       "email": "",
       "photo": ""
-    },
-    {
-      "id": "tamal-chakraborty",
-      "name": "Dr. Tamal Chakraborty",
-      "role": "FACULTY",
-      "initials": "TC"
     },
     {
       "id": "sumitra-sen",
