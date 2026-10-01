@@ -11,7 +11,11 @@ function makeSession(){const payload=b64(JSON.stringify({exp:Date.now()+8*60*60*
 function validSession(req){const c=req.headers.cookie||'';const m=c.match(/(?:^|; )physio_admin=([^;]+)/);if(!m)return false;const [p,s]=m[1].split('.');if(!p||!s)return false;const a=Buffer.from(s),b=Buffer.from(sign(p));if(a.length!==b.length||!crypto.timingSafeEqual(a,b))return false;try{return JSON.parse(Buffer.from(p,'base64url').toString()).exp>Date.now()}catch{return false}}
 function cookie(v,max=28800){return `physio_admin=${v}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=${max}`}
 async function gh(path,options={}){if(!TOKEN)throw new Error('GITHUB_TOKEN is not configured in Vercel.');const r=await fetch('https://api.github.com/repos/'+REPO+'/contents/'+path,{...options,headers:{Accept:'application/vnd.github+json',Authorization:'Bearer '+TOKEN,'X-GitHub-Api-Version':'2022-11-28',...(options.headers||{})}});const d=await r.json();if(!r.ok)throw new Error(d.message||'GitHub request failed');return d}
-async function getData(){const raw='https://raw.githubusercontent.com/'+REPO+'/'+BRANCH+'/'+DATA_PATH+'?t='+Date.now();const r=await fetch(raw);if(!r.ok)throw new Error('Faculty data could not be loaded.');return r.json()}
+async function getData(){
+  const file=await gh(DATA_PATH);
+  const content=Buffer.from(file.content.replace(/\n/g,''),'base64').toString('utf8');
+  return JSON.parse(content);
+}
 async function putFile(path,content,message,sha){const body={message,content:Buffer.from(content).toString('base64'),branch:BRANCH};if(sha)body.sha=sha;return gh(path,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})}
 function json(res,status,data,extra={}){res.statusCode=status;for(const [k,v] of Object.entries(extra))res.setHeader(k,v);res.setHeader('Content-Type','application/json');res.end(JSON.stringify(data))}
 module.exports=async(req,res)=>{
