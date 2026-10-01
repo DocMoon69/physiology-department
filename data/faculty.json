@@ -4,7 +4,12 @@
       "id": "krishna-chandra-sarkar",
       "name": "Dr. Krishna Chandra Sarkar",
       "role": "HEAD OF DEPARTMENT",
-      "initials": "KCS"
+      "designation": "PROFESSOR",
+      "qualification": "MBBS,MD",
+      "about": "",
+      "research": "",
+      "email": "",
+      "photo": ""
     },
     {
       "id": "debjani-laha",
