@@ -26,7 +26,12 @@
       "id": "prativa-lahiri",
       "name": "Dr. Prativa Lahiri",
       "role": "FACULTY",
-      "initials": "PL"
+      "designation": "ASSOCIATE PROFESSOR",
+      "qualification": "MBBS,MD",
+      "about": "",
+      "research": "",
+      "email": "",
+      "photo": ""
     },
     {
       "id": "tamal-chakraborty",
