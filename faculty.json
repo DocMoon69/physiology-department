@@ -1,0 +1,70 @@
+{
+  "faculty": [
+    {
+      "id": "krishna-chandra-sarkar",
+      "name": "Dr. Krishna Chandra Sarkar",
+      "role": "HEAD OF DEPARTMENT",
+      "initials": "KCS"
+    },
+    {
+      "id": "debjani-laha",
+      "name": "Dr. Debjani Laha",
+      "role": "FACULTY",
+      "initials": "DL"
+    },
+    {
+      "id": "prativa-lahiri",
+      "name": "Dr. Prativa Lahiri",
+      "role": "FACULTY",
+      "initials": "PL"
+    },
+    {
+      "id": "tamal-chakraborty",
+      "name": "Dr. Tamal Chakraborty",
+      "role": "FACULTY",
+      "initials": "TC"
+    },
+    {
+      "id": "sumitra-sen",
+      "name": "Dr. Sumitra Sen",
+      "role": "FACULTY",
+      "initials": "SS"
+    },
+    {
+      "id": "wasim-bari-rehman",
+      "name": "Dr. Wasim Bari Rehman",
+      "role": "FACULTY",
+      "initials": "WBR"
+    },
+    {
+      "id": "soumen-chakrabory",
+      "name": "Dr. Soumen Chakrabory",
+      "role": "FACULTY",
+      "initials": "SC"
+    },
+    {
+      "id": "nazlin-haider-choudhury",
+      "name": "Dr. Nazlin Haider Choudhury",
+      "role": "FACULTY",
+      "initials": "NHC"
+    },
+    {
+      "id": "ujjawal-kumar-chakraborty",
+      "name": "Dr. Ujjawal Kumar Chakraborty",
+      "role": "FACULTY",
+      "initials": "UKC"
+    },
+    {
+      "id": "ranjitha-melhotra",
+      "name": "Dr. Ranjitha Melhotra",
+      "role": "FACULTY",
+      "initials": "RM"
+    },
+    {
+      "id": "kartik-chandra-sardar",
+      "name": "Dr. Kartik Chandra Sardar",
+      "role": "FACULTY",
+      "initials": "KCS"
+    }
+  ]
+}
