@@ -1,31 +1,594 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="Department of Physiology, North Bengal Medical College and Hospital.">
-<title>Department of Physiology | North Bengal Medical College & Hospital</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Department of Physiology, North Bengal Medical College and Hospital."
+  >
+
+  <title>Department of Physiology | North Bengal Medical College & Hospital</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header class="site-header"><div class="container nav-wrap">
-<a class="brand" href="#home"><div class="brand-mark">NB</div><div><strong>Department of Physiology</strong><span>North Bengal Medical College & Hospital</span></div></a>
-<button class="menu-btn" aria-label="Open menu">☰</button>
-<nav class="nav"><a href="#about">About</a><a href="#faculty">Faculty</a><a href="#academics">Academics</a><a href="#research">Research</a><a href="#facilities">Facilities</a><a href="#contact">Contact</a></nav>
-</div></header>
-<main>
-<section id="home" class="hero"><div class="container hero-content"><p class="eyebrow">NORTH BENGAL MEDICAL COLLEGE & HOSPITAL</p><h1>Department of<br><span>Physiology</span></h1><p class="hero-text">Advancing medical education, scientific understanding and human physiology through teaching, research and academic excellence.</p><div class="hero-actions"><a class="btn primary" href="#faculty">Meet Our Faculty</a><a class="btn secondary" href="#about">Explore Department</a></div></div></section>
-<section class="stats"><div class="container stats-grid"><div><strong id="facultyCount">11</strong><span>Faculty Members</span></div><div><strong>01</strong><span>Academic Department</span></div><div><strong>UG</strong><span>Undergraduate Education</span></div><div><strong>PG</strong><span>Postgraduate Education</span></div><div><strong>Research</strong><span>Academic Activities</span></div></div></section>
-<section id="about" class="section"><div class="container split"><div><p class="eyebrow">ABOUT THE DEPARTMENT</p><h2>Understanding the science of the human body.</h2></div><div class="section-copy"><p>Welcome to the Department of Physiology at North Bengal Medical College and Hospital. This website presents the department's faculty, academic activities, research interests, facilities and important departmental information.</p><p>The department is committed to creating a strong foundation in physiology for medical students while encouraging scientific thinking, clinical correlation and research-oriented learning.</p></div></div></section>
-<section id="faculty" class="section soft"><div class="container"><div class="section-heading"><div><p class="eyebrow">OUR FACULTY</p><h2>Meet the Department</h2></div><p>Click any faculty card to view the profile.</p></div><div id="facultyGrid" class="faculty-grid"><div class="loading">Loading faculty profiles…</div></div></div></section>
-<section id="academics" class="section"><div class="container"><p class="eyebrow">ACADEMICS</p><h2>Undergraduate & Postgraduate Education</h2><div class="info-grid"><div class="info-card"><span>01</span><h3>Undergraduate (UG) Education</h3><p>Physiology teaching, practical training and clinical correlation for undergraduate medical students.</p></div><div class="info-card"><span>02</span><h3>Postgraduate (PG) Education</h3><p>Postgraduate teaching, academic training and advanced learning in physiology.</p></div><div class="info-card"><span>03</span><h3>Academic Activities</h3><p>Seminars, demonstrations, discussions and other departmental academic activities.</p></div></div></div></section>
-<section id="research" class="section dark"><div class="container split"><div><p class="eyebrow">RESEARCH</p><h2>From physiological principles to scientific discovery.</h2></div><div class="section-copy"><p>This section will showcase the department's research areas, ongoing projects, publications, conferences, collaborations and faculty research profiles.</p><div class="tag-row"><span>Research Areas</span><span>Publications</span><span>Projects</span><span>Collaborations</span></div></div></div></section>
-<section id="facilities" class="section"><div class="container"><p class="eyebrow">FACILITIES</p><h2>Department Facilities</h2><div class="facility-grid"><div class="facility"><div class="facility-icon">⌁</div><h3>Physiology Laboratory</h3><p>Practical teaching and demonstration facilities.</p></div><div class="facility"><div class="facility-icon">◌</div><h3>Research Facilities</h3><p>Space and resources supporting academic research.</p></div><div class="facility"><div class="facility-icon">▣</div><h3>Academic Resources</h3><p>Teaching resources for students and faculty.</p></div></div></div></section>
-<section class="cta"><div class="container"><p class="eyebrow">DEPARTMENT OF PHYSIOLOGY</p><h2>Education. Research. Excellence.</h2><a class="btn primary" href="#contact">Contact Department</a></div></section>
-<section id="contact" class="section contact"><div class="container split"><div><p class="eyebrow">CONTACT</p><h2>North Bengal Medical College & Hospital</h2></div><div class="contact-box"><p><strong>Department of Physiology</strong></p><p>North Bengal Medical College and Hospital<br>West Bengal, India</p><p class="small">Official department contact details will be added after confirmation.</p></div></div></section>
-</main>
-<footer><div class="container footer-wrap"><div><strong>Department of Physiology</strong><br><span>North Bengal Medical College & Hospital</span></div><div>© <span id="year"></span> Department of Physiology</div></div></footer>
-<div id="profileModal" class="modal" aria-hidden="true"><div class="profile-modal"><button class="modal-close" onclick="closeProfile()">×</button><div id="profileContent"></div></div></div>
-<script src="script.js"></script>
-</body></html>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+  <header class="site-header">
+
+    <div class="container nav-wrap">
+
+      <!-- BRAND -->
+      <a href="#home" class="brand">
+
+        <div class="brand-mark">
+          NB
+        </div>
+
+        <div class="brand-text">
+          <strong>Department of Physiology</strong>
+          <span>North Bengal Medical College & Hospital</span>
+        </div>
+
+      </a>
+
+      <!-- DESKTOP / MOBILE MENU BUTTON -->
+      <button
+        class="menu-btn"
+        aria-label="Open navigation menu"
+        type="button"
+      >
+        ☰
+      </button>
+
+      <!-- NAVIGATION -->
+      <nav class="nav" aria-label="Main navigation">
+
+        <a href="#about">About</a>
+
+        <a href="#faculty">Faculty</a>
+
+        <a href="#academics">Academics</a>
+
+        <a href="#research">Research</a>
+
+        <a href="#facilities">Facilities</a>
+
+        <a href="#contact">Contact</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       MAIN CONTENT
+  ========================== -->
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section id="home" class="hero">
+
+      <div class="container hero-content">
+
+        <p class="eyebrow">
+          NORTH BENGAL MEDICAL COLLEGE & HOSPITAL
+        </p>
+
+        <h1>
+          Department of
+          <br>
+          <span>Physiology</span>
+        </h1>
+
+        <p class="hero-text">
+          Advancing medical education, scientific understanding and
+          human physiology through teaching, research and academic excellence.
+        </p>
+
+        <div class="hero-actions">
+
+          <a href="#faculty" class="btn primary">
+            Meet Our Faculty
+          </a>
+
+          <a href="#about" class="btn secondary">
+            Explore Department
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         STATISTICS
+    ========================== -->
+
+    <section class="stats">
+
+      <div class="container stats-grid">
+
+        <div>
+          <strong id="facultyCount">11</strong>
+          <span>Faculty Members</span>
+        </div>
+
+        <div>
+          <strong>01</strong>
+          <span>Academic Department</span>
+        </div>
+
+        <div>
+          <strong>UG</strong>
+          <span>Undergraduate Education</span>
+        </div>
+
+        <div>
+          <strong>PG</strong>
+          <span>Postgraduate Education</span>
+        </div>
+
+        <div>
+          <strong>Research</strong>
+          <span>Academic Activities</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section id="about" class="section">
+
+      <div class="container split">
+
+        <div>
+
+          <p class="eyebrow">
+            ABOUT THE DEPARTMENT
+          </p>
+
+          <h2>
+            Understanding the science of the human body.
+          </h2>
+
+        </div>
+
+        <div class="section-copy">
+
+          <p>
+            Welcome to the Department of Physiology at North Bengal
+            Medical College and Hospital. This website presents the
+            department's faculty, academic activities, research interests,
+            facilities and important departmental information.
+          </p>
+
+          <p>
+            The department is committed to creating a strong foundation
+            in physiology for medical students while encouraging scientific
+            thinking, clinical correlation and research-oriented learning.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         FACULTY
+    ========================== -->
+
+    <section id="faculty" class="section soft">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+
+            <p class="eyebrow">
+              OUR FACULTY
+            </p>
+
+            <h2>
+              Meet the Department
+            </h2>
+
+          </div>
+
+          <p>
+            Click any faculty card to view the profile.
+          </p>
+
+        </div>
+
+
+        <!-- Faculty loaded dynamically from API -->
+
+        <div id="facultyGrid" class="faculty-grid">
+
+          <div class="loading">
+            Loading faculty profiles…
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ACADEMICS
+    ========================== -->
+
+    <section id="academics" class="section">
+
+      <div class="container">
+
+        <p class="eyebrow">
+          ACADEMICS
+        </p>
+
+        <h2>
+          Undergraduate & Postgraduate Education
+        </h2>
+
+
+        <div class="info-grid">
+
+          <div class="info-card">
+
+            <span>01</span>
+
+            <h3>
+              Undergraduate (UG) Education
+            </h3>
+
+            <p>
+              Physiology teaching, practical training and clinical
+              correlation for undergraduate medical students.
+            </p>
+
+          </div>
+
+
+          <div class="info-card">
+
+            <span>02</span>
+
+            <h3>
+              Postgraduate (PG) Education
+            </h3>
+
+            <p>
+              Postgraduate teaching, academic training and advanced
+              learning in physiology.
+            </p>
+
+          </div>
+
+
+          <div class="info-card">
+
+            <span>03</span>
+
+            <h3>
+              Academic Activities
+            </h3>
+
+            <p>
+              Seminars, demonstrations, discussions and other
+              departmental academic activities.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         RESEARCH
+    ========================== -->
+
+    <section id="research" class="section dark">
+
+      <div class="container split">
+
+        <div>
+
+          <p class="eyebrow">
+            RESEARCH
+          </p>
+
+          <h2>
+            From physiological principles to scientific discovery.
+          </h2>
+
+        </div>
+
+
+        <div class="section-copy">
+
+          <p>
+            This section will showcase the department's research areas,
+            ongoing projects, publications, conferences, collaborations
+            and faculty research profiles.
+          </p>
+
+
+          <div class="tag-row">
+
+            <span>Research Areas</span>
+
+            <span>Publications</span>
+
+            <span>Projects</span>
+
+            <span>Collaborations</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         FACILITIES
+    ========================== -->
+
+    <section id="facilities" class="section">
+
+      <div class="container">
+
+        <p class="eyebrow">
+          FACILITIES
+        </p>
+
+        <h2>
+          Department Facilities
+        </h2>
+
+
+        <div class="facility-grid">
+
+
+          <div class="facility">
+
+            <div class="facility-icon">
+              ⌁
+            </div>
+
+            <h3>
+              Physiology Laboratory
+            </h3>
+
+            <p>
+              Practical teaching and demonstration facilities.
+            </p>
+
+          </div>
+
+
+          <div class="facility">
+
+            <div class="facility-icon">
+              ◌
+            </div>
+
+            <h3>
+              Research Facilities
+            </h3>
+
+            <p>
+              Space and resources supporting academic research.
+            </p>
+
+          </div>
+
+
+          <div class="facility">
+
+            <div class="facility-icon">
+              ▣
+            </div>
+
+            <h3>
+              Academic Resources
+            </h3>
+
+            <p>
+              Teaching resources for students and faculty.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CALL TO ACTION
+    ========================== -->
+
+    <section class="cta">
+
+      <div class="container">
+
+        <p class="eyebrow">
+          DEPARTMENT OF PHYSIOLOGY
+        </p>
+
+        <h2>
+          Education. Research. Excellence.
+        </h2>
+
+        <a href="#contact" class="btn primary">
+          Contact Department
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact" class="section contact">
+
+      <div class="container split">
+
+        <div>
+
+          <p class="eyebrow">
+            CONTACT
+          </p>
+
+          <h2>
+            North Bengal Medical College & Hospital
+          </h2>
+
+        </div>
+
+
+        <div class="contact-box">
+
+          <p>
+            <strong>
+              Department of Physiology
+            </strong>
+          </p>
+
+          <p>
+            North Bengal Medical College and Hospital
+            <br>
+            West Bengal, India
+          </p>
+
+          <p class="small">
+            Official department contact details will be added
+            after confirmation.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="container footer-wrap">
+
+      <div>
+
+        <strong>
+          Department of Physiology
+        </strong>
+
+        <br>
+
+        <span>
+          North Bengal Medical College & Hospital
+        </span>
+
+      </div>
+
+
+      <div>
+
+        © <span id="year"></span>
+        Department of Physiology
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       FACULTY PROFILE MODAL
+  ========================== -->
+
+  <div
+    id="profileModal"
+    class="modal"
+    aria-hidden="true"
+  >
+
+    <div class="profile-modal">
+
+      <button
+        class="modal-close"
+        onclick="closeProfile()"
+        aria-label="Close profile"
+        type="button"
+      >
+        ×
+      </button>
+
+      <div id="profileContent"></div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
