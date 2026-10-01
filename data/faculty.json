@@ -10,18 +10,18 @@
       "id": "debjani-laha",
       "name": "Dr. Debjani Laha",
       "role": "FACULTY",
+      "initials": "DL"
+    },
+    {
+      "id": "prativa-lahiri",
+      "name": "Dr. Prativa Lahiri",
+      "role": "FACULTY",
       "designation": "ASSOCIATE PROFESSOR",
       "qualification": "MBBS,MD",
       "about": "",
       "research": "",
       "email": "",
       "photo": ""
-    },
-    {
-      "id": "prativa-lahiri",
-      "name": "Dr. Prativa Lahiri",
-      "role": "FACULTY",
-      "initials": "PL"
     },
     {
       "id": "tamal-chakraborty",
